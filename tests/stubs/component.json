@@ -1,0 +1,21 @@
+{
+    "name": "Order",
+    "alias": "order",
+    "description": "My demo component",
+    "version": "0.1",
+    "keywords": [
+        "my",
+        "stub",
+        "component"
+    ],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Components\\Order\\Providers\\OrderServiceProvider",
+        "Components\\Order\\Providers\\EventServiceProvider",
+        "Components\\Order\\Providers\\RouteServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+    ]
+}
