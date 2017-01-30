@@ -137,7 +137,7 @@ return [
     */
 
     'scan' => [
-        'enabled' => false,
+        'enabled' => true,
         'paths'   => [
             base_path('vendor/*/*')
         ]
@@ -152,7 +152,7 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'consigliere',
+        'vendor' => 'componeint',
         'author' => [
             'name'  => 'anonymoussc',
             'email' => '50c5ac69@opayq.com'
@@ -168,7 +168,7 @@ return [
     */
     'cache'    => [
         'enabled'  => false,
-        'key'      => 'consigliere-components',
+        'key'      => 'componeint',
         'lifetime' => 60
     ],
     /*
