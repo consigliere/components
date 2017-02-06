@@ -4,7 +4,7 @@ All Notable changes to `components` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## v0.2.0 - 2017-02-06
+## v0.1.2 - 2017-02-06
 
 ### Added
 - Added configuration 'merge.published-assets' option to merge published assets or retain it's components name.
