@@ -18,6 +18,10 @@ class AssetPublisher extends Publisher
      */
     public function getDestinationPath()
     {
+        if ($this->repository->config('merge.published-assets')) {
+            return $this->repository->assetPath('');
+        }
+
         return $this->repository->assetPath($this->component->getLowerName());
     }
 

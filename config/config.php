@@ -72,7 +72,7 @@ return [
         |
         */
 
-        'assets' => public_path('components'),
+        'assets' => base_path('components'),
         /*
         |--------------------------------------------------------------------------
         | The migrations path
@@ -180,5 +180,15 @@ return [
     */
     'register' => [
         'translations' => true
+    ],
+    /*
+    |--------------------------------------------------------------------------
+    | Published assets merge.
+    | Published assets will merge into target assets directory or
+    | retain it's own components name
+    |--------------------------------------------------------------------------
+    */
+    'merge'    => [
+        'published-assets' => true
     ],
 ];
