@@ -152,7 +152,7 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'componeint',
+        'vendor' => 'componentsv',
         'author' => [
             'name'  => 'anonymoussc',
             'email' => '50c5ac69@opayq.com'
@@ -168,7 +168,7 @@ return [
     */
     'cache'    => [
         'enabled'  => false,
-        'key'      => 'componeint',
+        'key'      => 'componentsv',
         'lifetime' => 60
     ],
     /*
@@ -185,7 +185,7 @@ return [
     |--------------------------------------------------------------------------
     | Published assets merge.
     | Published assets will merge into target assets directory or
-    | retain it's own components name
+    | retain it's own components (as a directory) name
     |--------------------------------------------------------------------------
     */
     'merge'    => [
