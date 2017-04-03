@@ -25,22 +25,13 @@ return [
     'stubs' => [
         'enabled'      => false,
         'path'         => base_path(__DIR__ . '/../src/Commands/stubs'),
-        // 'files'        => [
-        //     'start'           => 'start.php',
-        //     'routes'          => 'Http/routes.php',
-        //     'json'            => 'component.json',
-        //     'views/index'     => 'Resources/views/index.blade.php',
-        //     'views/master'    => 'Resources/views/layouts/master.blade.php',
-        //     'scaffold/config' => 'Config/config.php',
-        //     'composer'        => 'composer.json'
-        // ],
         'files'        => [
             'start'           => 'start.php',
-            'routes'          => 'app/Http/routes.php',
+            'routes'          => 'Http/routes.php',
             'json'            => 'component.json',
-            'views/index'     => 'resources/views/index.blade.php',
-            'views/master'    => 'resources/views/layouts/master.blade.php',
-            'scaffold/config' => 'config/config.php',
+            'views/index'     => 'Resources/views/index.blade.php',
+            'views/master'    => 'Resources/views/layouts/master.blade.php',
+            'scaffold/config' => 'Config/config.php',
             'composer'        => 'composer.json'
         ],
         'replacements' => [
@@ -112,49 +103,26 @@ return [
         | Here you may update the components generator path.
         |
         */
-
-        // 'generator' => [
-        //     'assets'        => 'Resources/assets',
-        //     'config'        => 'Config',
-        //     'command'       => 'Console',
-        //     'event'         => 'Events',
-        //     'listener'      => 'Events/Handlers',
-        //     'migration'     => 'Database/Migrations',
-        //     'model'         => 'Models',
-        //     'repository'    => 'Repositories',
-        //     'seed'          => 'Database/Seeds',
-        //     'controller'    => 'Http/Controllers',
-        //     'middleware'    => 'Http/Middleware',
-        //     'request'       => 'Http/Requests',
-        //     'provider'      => 'Providers',
-        //     'lang'          => 'Resources/lang',
-        //     'views'         => 'Resources/views',
-        //     'test'          => 'Tests',
-        //     'jobs'          => 'Jobs',
-        //     'emails'        => 'Emails',
-        //     'notifications' => 'Notifications'
-        // ]
         'generator' => [
-            'config'        => 'config',
-            'migration'     => 'database/migrations',
-            'seed'          => 'database/seeds',
-            'assets'        => 'resources/assets',
-            'lang'          => 'resources/lang',
-            'views'         => 'resources/views',
-            'routes'        => 'routes',
-            'command'       => 'app/Console',
-            'event'         => 'app/Events',
-            'listener'      => 'app/Events/Handlers',
-            'controller'    => 'app/Http/Controllers',
-            'middleware'    => 'app/Http/Middleware',
-            'request'       => 'app/Http/Requests',
-            'model'         => 'app/Models',
-            'jobs'          => 'app/Jobs',
-            'repository'    => 'app/Repositories',
-            'provider'      => 'app/Providers',
-            'emails'        => 'app/Emails',
-            'notifications' => 'app/Notifications',
+            'assets'        => 'Resources/assets',
+            'config'        => 'Config',
+            'command'       => 'Console',
+            'event'         => 'Events',
+            'listener'      => 'Events/Handlers',
+            'migration'     => 'Database/Migrations',
+            'model'         => 'Models',
+            'repository'    => 'Repositories',
+            'seed'          => 'Database/Seeds',
+            'controller'    => 'Http/Controllers',
+            'middleware'    => 'Http/Middleware',
+            'request'       => 'Http/Requests',
+            'provider'      => 'Providers',
+            'lang'          => 'Resources/lang',
+            'views'         => 'Resources/views',
             'test'          => 'Tests',
+            'jobs'          => 'Jobs',
+            'emails'        => 'Emails',
+            'notifications' => 'Notifications'
         ]
     ],
     /*
