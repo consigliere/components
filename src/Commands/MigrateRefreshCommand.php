@@ -33,13 +33,13 @@ class MigrateRefreshCommand extends ComponentCommand
     public function fire()
     {
         $this->call('component:migrate-reset', [
-            'component'     => $this->getComponentName(),
+            'component'  => $this->getComponentName(),
             '--database' => $this->option('database'),
             '--force'    => $this->option('force'),
         ]);
 
         $this->call('component:migrate', [
-            'component'     => $this->getComponentName(),
+            'component'  => $this->getComponentName(),
             '--database' => $this->option('database'),
             '--force'    => $this->option('force'),
         ]);

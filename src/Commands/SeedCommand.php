@@ -61,6 +61,7 @@ class SeedCommand extends ComponentCommand
         if (!$components instanceof Repository) {
             throw new RuntimeException("Component repository not found!");
         }
+
         return $components;
     }
 

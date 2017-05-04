@@ -42,6 +42,7 @@ class MigrateCommand extends ComponentCommand
 
         if ($name) {
             $component = $this->component->findOrFail($name);
+
             return $this->migrate($component);
         }
 
