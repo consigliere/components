@@ -30,7 +30,7 @@ class Json
     /**
      * The constructor.
      *
-     * @param mixed                             $path
+     * @param mixed $path
      * @param \Illuminate\Filesystem\Filesystem $filesystem
      */
     public function __construct($path, Filesystem $filesystem = null)
@@ -91,7 +91,7 @@ class Json
     /**
      * Make new instance.
      *
-     * @param string                            $path
+     * @param string $path
      * @param \Illuminate\Filesystem\Filesystem $filesystem
      *
      * @return static
@@ -122,7 +122,7 @@ class Json
             return json_decode($this->getContents(), 1);
         }
 
-        return app('cache')->remember($this->getPath(), config('components.cache.lifetime'), function () {
+        return app('cache')->remember($this->getPath(), config('components.cache.lifetime'), function() {
             return json_decode($this->getContents(), 1);
         });
     }
@@ -157,7 +157,7 @@ class Json
      * Set a specific key & value.
      *
      * @param string $key
-     * @param mixed  $value
+     * @param mixed $value
      *
      * @return $this
      */
@@ -207,7 +207,7 @@ class Json
      * Handle call to __call method.
      *
      * @param string $method
-     * @param array  $arguments
+     * @param array $arguments
      *
      * @return mixed
      */
