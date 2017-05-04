@@ -57,7 +57,7 @@ class Installer
      * @param string $name
      * @param string $version
      * @param string $type
-     * @param bool   $tree
+     * @param bool $tree
      */
     public function __construct($name, $version = null, $type = null, $tree = false)
     {
@@ -135,7 +135,7 @@ class Installer
         $process->setTimeout($this->timeout);
 
         if ($this->console instanceof Command) {
-            $process->run(function ($type, $line) {
+            $process->run(function($type, $line) {
                 $this->console->line($line);
             });
         }
