@@ -80,7 +80,7 @@ class ConsoleServiceProvider extends ServiceProvider
             GenerateJobCommand::class,
             GenerateMailCommand::class,
             GenerateNotificationCommand::class,
-            PublishSeedCommand::class
+            PublishSeedCommand::class,
         ];
 
     /**
