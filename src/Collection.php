@@ -23,7 +23,7 @@ class Collection extends \Illuminate\Support\Collection
      */
     public function toArray()
     {
-        return array_map(function ($value) {
+        return array_map(function($value) {
             if ($value instanceof Component) {
                 return $value->json()->getAttributes();
             }
