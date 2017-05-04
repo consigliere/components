@@ -29,7 +29,7 @@ class Stub
      * The contructor.
      *
      * @param string $path
-     * @param array  $replaces
+     * @param array $replaces
      */
     public function __construct($path, array $replaces = [])
     {
@@ -41,7 +41,7 @@ class Stub
      * Create new self instance.
      *
      * @param string $path
-     * @param array  $replaces
+     * @param array $replaces
      *
      * @return self
      */
@@ -54,7 +54,7 @@ class Stub
      * Create new self instance from full path.
      *
      * @param string $path
-     * @param array  $replaces
+     * @param array $replaces
      *
      * @return self
      */
