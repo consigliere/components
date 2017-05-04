@@ -35,8 +35,8 @@ class Migrator
      */
     public function __construct(Component $component)
     {
-        $this->component  = $component;
-        $this->laravel = $component->getLaravel();
+        $this->component = $component;
+        $this->laravel   = $component->getLaravel();
     }
 
     /**
@@ -93,7 +93,7 @@ class Migrator
             return [];
         }
 
-        $files = array_map(function ($file) {
+        $files = array_map(function($file) {
             return str_replace('.php', '', basename($file));
 
         }, $files);
@@ -291,7 +291,7 @@ class Migrator
 
         $result = $query->orderBy('migration', 'desc')->get();
 
-        return collect($result)->map(function ($item) {
+        return collect($result)->map(function($item) {
             return (array)$item;
         })->pluck('migration');
     }

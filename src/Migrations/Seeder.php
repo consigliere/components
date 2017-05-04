@@ -35,8 +35,8 @@ class Seeder
      */
     public function __construct(Component $component)
     {
-        $this->component  = $component;
-        $this->laravel = $component->getLaravel();
+        $this->component = $component;
+        $this->laravel   = $component->getLaravel();
     }
 
     /**
@@ -93,7 +93,7 @@ class Seeder
             return [];
         }
 
-        $files = array_map(function ($file) {
+        $files = array_map(function($file) {
             return str_replace('.php', '', basename($file));
 
         }, $files);
