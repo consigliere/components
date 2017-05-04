@@ -171,7 +171,7 @@ class Repository implements RepositoryInterface, Countable
      */
     public function getCached()
     {
-        return $this->app['cache']->remember($this->config('cache.key'), $this->config('cache.lifetime'), function () {
+        return $this->app['cache']->remember($this->config('cache.key'), $this->config('cache.lifetime'), function() {
             return $this->toCollection()->toArray();
         });
     }
@@ -259,7 +259,7 @@ class Repository implements RepositoryInterface, Countable
     {
         $components = $this->enabled();
 
-        uasort($components, function (Component $a, Component $b) use ($direction) {
+        uasort($components, function(Component $a, Component $b) use ($direction) {
             if ($a->order == $b->order) {
                 return 0;
             }
@@ -568,7 +568,7 @@ class Repository implements RepositoryInterface, Countable
      * @param string $name
      * @param string $version
      * @param string $type
-     * @param bool   $subtree
+     * @param bool $subtree
      *
      * @return \Symfony\Component\Process\Process
      */
