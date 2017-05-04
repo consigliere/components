@@ -10,8 +10,8 @@ class Starter
     /**
      * Load the workbench vendor auto-load files.
      *
-     * @param string                            $path
-     * @param \Symfony\Component\Finder\Finder  $finder
+     * @param string $path
+     * @param \Symfony\Component\Finder\Finder $finder
      * @param \Illuminate\Filesystem\Filesystem $files
      */
     public static function start($path, Finder $finder = null, Filesystem $files = null)
