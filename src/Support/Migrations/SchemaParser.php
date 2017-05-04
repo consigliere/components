@@ -126,7 +126,7 @@ class SchemaParser implements Arrayable
 
         foreach ($this->toArray() as $column => $attributes) {
             $attributes = [head($attributes)];
-            $results .= $this->createField($column, $attributes, 'remove');
+            $results    .= $this->createField($column, $attributes, 'remove');
         }
 
         return $results;
@@ -136,7 +136,7 @@ class SchemaParser implements Arrayable
      * Create field.
      *
      * @param string $column
-     * @param array  $attributes
+     * @param array $attributes
      *
      * @return string
      */
@@ -158,7 +158,7 @@ class SchemaParser implements Arrayable
     /**
      * Add relation column.
      *
-     * @param int    $key
+     * @param int $key
      * @param string $field
      * @param string $column
      *
@@ -176,7 +176,7 @@ class SchemaParser implements Arrayable
     /**
      * Format field to script.
      *
-     * @param int    $key
+     * @param int $key
      * @param string $field
      * @param string $column
      *
@@ -202,7 +202,7 @@ class SchemaParser implements Arrayable
     /**
      * Format field to script.
      *
-     * @param int    $key
+     * @param int $key
      * @param string $field
      * @param string $column
      *
