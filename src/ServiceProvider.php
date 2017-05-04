@@ -49,7 +49,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function setupStubPath()
     {
-        $this->app->booted(function ($app) {
+        $this->app->booted(function($app) {
             Stub::setBasePath(__DIR__ . '/Commands/stubs');
 
             if ($app['components']->config('stubs.enabled') === true) {
@@ -73,7 +73,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     protected function registerServices()
     {
-        $this->app->singleton('components', function ($app) {
+        $this->app->singleton('components', function($app) {
             $path = $app['config']->get('components.paths.components');
 
             return new Repository($app, $path);
