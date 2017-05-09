@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "$COMPONENT_NAMESPACE$\\$STUDLY_NAME$\\": ""
+            "$COMPONENT_NAMESPACE$\\$STUDLY_NAME$\\": "src"
         }
     }
 }
