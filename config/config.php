@@ -27,7 +27,7 @@ return [
         'path'         => base_path(__DIR__ . '/../src/Commands/stubs'),
         'files'        => [
             'start'           => 'start.php',
-            'routes'          => 'Http/routes.php',
+            'routes'          => 'src/Http/routes.php',
             'json'            => 'component.json',
             'views/index'     => 'Resources/views/index.blade.php',
             'views/master'    => 'Resources/views/layouts/master.blade.php',
